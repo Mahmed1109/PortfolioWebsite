@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a,
+button {
+    transition: all 300ms ease;
+}
+
+nav,
+.navoptions {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    /*Takes 17% of the whole page*/
+}
+
+.navoptions {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration: white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1.5rem;
+    /*Adds space between the link and the line*/
+
+}
+
+.name {
+    font-size: 1.5rem;
+}
+
+.name:hover {
+    cursor: defaults;
+}
+
+
+/* SECTIONS */
+
+section {
+    padding-top: 6vh;
+    /*Space between sections*/
+    height: 96vh;
+    margin: 0 10rem;
+    /*zero top and bottom 10rems to the side */
+    box-sizing: border-box;
+    min-height: fit-content;
+    /*Stops the overlap*/
+}
+
+
+
+/* PROFILE SECTION */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.piccontainer {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section_intro {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    text-align: center;
+}
+
+.section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.typewriter h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid aquamarine;
+    animation: typing 3s steps(30, end) infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+
+.introname {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn_container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    cursor: pointer;
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+
+button:hover {
+    color: black;
+    border: rgb(255, 255, 255) 0.1rem solid;
+    background: rgb(152, 152, 156);
+}
+
+.btn-container {
+    gap: 1rem;
+}
+
+#cv {
+    color: white;
+}
+
+/* ABOUT SECTION */
+
+#about {
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+
+.section-container {
+    display: flex;
+    gap: 4rem;
+    height: 80%;
+}
+
+.section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+    position: relative;
+}
+
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+article .icon {
+    cursor: default;
+}
+
+
+
+/*PROJECT*/
+#project {
+    height: auto;
+}
+
+.project_container {
+
+
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+
+
+.ops {
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    /*its 10% of the 90% width in the parent element which is poptions*/
+    border-radius: 10px;
+    background-color: rgb(123, 123, 124);
+}
+
+
+
+.ops h2 {
+    font-size: 30px;
+    margin: 20px 0px 40px;
+}
+
+.ops ul {
+    font-size: 18px;
+    text-align: left;
+    list-style-position: inside;
+}
+
+.ops li {
+    margin: 10px;
+}
+
+.ops span {
+    font-size: 15px;
+}
+
+
+
+
+
+
+ul {
+    list-style: none;
+}
+
+.ops li::before {
+    content: '\2022';
+    color: black;
+    padding: 15px;
+}
+
+/*Languages*/
+#languages {
+    padding-top: 150px;
+
+}
+
+.bordered-box {
+    border: 2px solid gray;
+    /* Add border */
+    padding: 20px;
+    /* Add padding */
+    width: 100%;
+    /* Stretch across the whole webpage */
+}
+
+.language-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap to next line */
+    gap: 20px;
+    /* Add some space between languages */
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    /* Align items vertically */
+    gap: 5px;
+    /* Add some space between image and language info */
+    width: calc(25% - 20px);
+    /* Set width to 25% minus the gap */
+}
+
+.language img {
+    width: 40px;
+    /* Set image width */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.language-info {
+    display: flex;
+    flex-direction: column;
+    /* Stack language info vertically */
+}
+
+.title {
+    margin-bottom: 10px;
+    /* Add space below title */
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .language-list {
+        flex-direction: column;
+        /* Stack languages vertically */
+        gap: 10px;
+        /* Reduce the gap between languages */
+    }
+
+    .language img {
+        display: none;
+        /* Hide images on smaller screens */
+    }
+
+
+    .language {
+        width: 100%;
+        /* Set width to 100% for full width */
+    }
+}
+
+/*CONTACT*/
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 120vh;
+
+}
+
+.contact-info-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info p {
+    font-size: larger;
+    /*Sets it larger than parent element specification*/
+}
+
+.contact-icon {
+    cursor: default;
+}
+
+.email-icon {
+    height: 2.5rem;
+}

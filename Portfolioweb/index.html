@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+
+<body>
+    <nav id="desktopnav">
+        <div class="name">Mohamed Ahmed</div>
+        <div class="navoptions">
+            <a href="#about">About Me</a>
+            <a href="#project">Projects</a>
+            <a href="#languages">Languages</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+    </nav>
+
+    <!--Add a desktop nav for smaller screens (hamburger menu)-->
+
+    <section id="profile">
+        <div class="piccontainer">
+            <img src="/Images/animated-man-computer-coding-nae6mec378lsg1i3-ezgif.com-crop.gif" />
+        </div>
+        <div class="section_intro">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="introname">Mohamed Ahmed</h1>
+            <div class="typewriter">
+                <h1>Front-end Developer</h1>
+            </div>
+            <br>
+            <div class="typewriteeffect"></div>
+            <br>
+            <div class="btn_container">
+                <button><a id="cv" href="MohamedAhmedCV.doc" download>Download Cv</a>
+                </button>
+                <!-- <a class="btn btn-primary" href="your_cv.pdf" download>Download CV</a>-->
+                <button onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials_container">
+                <a href="https://www.linkedin.com/in/mohamed-ahmed-9758a4280/" target="_blank">
+                    <img src="/Images/circle-linkedin-512.webp" class="icon" alt="LinkedIn Profile" />
+                </a>
+                <a href="https://github.com/Mahmed1109" target="_blank">
+                    <img src="/Images/25231.png" class="icon">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="title">Background</p>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="Images/animated-man-computer-coding-nae6mec378lsg1i3-ezgif.com-crop.gif" alt="Profile picture"
+                    class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+
+
+                    <div class="details-container">
+                        <h3>Education</h3>
+                        <p>B.Sc. Economics and Business Finance</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Armed with a degree in economics and business finance, I bring a fresh perspective to the world
+                        of computing. While my journey may not follow the conventional path of a software developer, I
+                        believe my background equips me with the necessary set of tools to tackle the day-to-day
+                        problems I will face in a software developer role.
+                    </p>
+                    <br>
+                    <br>
+                    <p>
+                        Beyond coding, I find balance in pursuing diverse interests. I am an active individual with a
+                        wide array of hobbies. Whether it's playing basketball, going on a run with friends, or any
+                        other form of activity that helps push my physical and mental boundaries,.
+
+                    </p>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project">
+
+        <h1 style="padding-bottom: 2rem;" class="title">Some projects I've worked on</h1>
+        <div class="project_container">
+            <div class="ops">
+                <h1>Javascript-Hangman Game</h1>
+                <br>
+                <img src="Images/Hangman.png">
+
+                <p>Using a combination of arrays and array methods to create a common user-interactive of Hangman </p>
+                <br>
+                <button id="javagit">Github Link</button>
+            </div>
+            <div class="ops">
+                <h1> RPS game</h1>
+                <br>
+                <img src="Images/RPS Game.png">
+
+                <p>Interative rock paper scissor game using javascript where the user is able to try beat the computer
+                </p>
+                <br>
+                <button id="rpsgit">Github Link</button>
+            </div>
+            <div class="ops">
+                <h1>Python and MySQL Database</h1>
+                <img src="Images/Python.png">
+
+                <p>Combining Python with the popular relational database MySQL, I constructed a user interactve
+                    search engine</p>
+                <p>The user will be execute an array of commands such as to print,add,update,delete,search the film
+                    databases or even exit the program from the terminal</p>
+
+                <br>
+                <button id="pygit">GitHub Link</button>
+            </div>
+    </section>
+    <section id="languages">
+        <div class="bordered-box">
+            <h2 class="title">Languages</h2>
+            <div class="language-list">
+                <article class="language">
+                    <img src="Images/HTML5_logo_and_wordmark.svg.png" alt="HTML Icon">
+                    <div class="language-info">
+                        <h3>HTML</h3>
+                        <div class="proficiency">Intermediate</div>
+                    </div>
+                </article>
+                <article class="language">
+                    <img src="Images/css3-logo-png-transparent.png" alt="CSS Icon">
+                    <div class="language-info">
+                        <h3>CSS</h3>
+                        <div class="proficiency">Intermediate</div>
+                    </div>
+                </article>
+                <article class="language">
+                    <img src="Images/python-logo-only.png" alt="Python Icon">
+                    <div class="language-info">
+                        <h3>Python</h3>
+                        <div class="proficiency">Basic</div>
+                    </div>
+                </article>
+                <article class="language">
+                    <img src="Images/JavaScript-logo.png" alt="Javascript Icon">
+                    <div class="language-info">
+                        <h3>Javascript</h3>
+                        <div class="proficiency">Basic</div>
+                    </div>
+                </article>
+                <article class="language">
+                    <img src="Images/mongodbiamge.png" alt="MongoDB Icon">
+                    <div class="language-info">
+                        <h3>MongoDB</h3>
+                        <div class="proficiency">Basic</div>
+                    </div>
+                </article>
+                <article class="language">
+                    <img src="Images/MySQL.png" alt="MySQL Icon">
+                    <div class="language-info">
+                        <h3>MySQL</h3>
+                        <div class="proficiency">Basic</div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-container">
+            <div class="contact-info">
+                <img src="Images/email-icon-free-vector.jpg" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:m.ahmed110900@gmail.com">Email Me!</a></p>
+            </div>
+            <div class="contact-info">
+                <img src="/Images/circle-linkedin-512.webp" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/mohamed-ahmed-9758a4280/" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
